@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"docking.widgets.table.TableTextFilter","methods":[{"javadoc":"","static":false,"name":"acceptsRow","comment":"","params":[{"type_long":"T","name":"rowObject","comment":"","type_short":"T"}],"throws":[],"return":{"type_long":"boolean","comment":"","type_short":"boolean"}}],"name":"SpyTextFilter","comment":"","fields":[]}

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Export-Package: com.dropbox.core;uses:="com.dropbox.core.http,com.drop
+ box.core.json,com.dropbox.core.util,com.fasterxml.jackson.core,javax.
+ servlet.http";version="1.7.7",com.dropbox.core.http;uses:="javax.net.
+ ssl";version="1.7.7",com.dropbox.core.json;uses:="com.dropbox.core.ut
+ il,com.fasterxml.jackson.core";version="1.7.7",com.dropbox.core.util;
+ version="1.7.7"
+Built-By: kannan
+Tool: Bnd-2.3.0.201405100607
+Bundle-Name: Dropbox Core API SDK
+Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Build-Jdk: 1.7.0_25
+Bundle-Version: 1.7.7
+Bnd-LastModified: 1409717266447
+Bundle-ManifestVersion: 2
+Bundle-License: http://opensource.org/licenses/MIT
+Bundle-Description: A client library for Dropbox's HTTP-based "Core AP
+ I".
+Bundle-SymbolicName: com.dropbox.core.dropbox-core-sdk
+Import-Package: com.fasterxml.jackson.core;version="[2.4,3)",javax.net
+ .ssl,javax.servlet.http
+Archiver-Version: Plexus Archiver
+

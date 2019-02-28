@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"java.beans.PropertyEditorSupport","methods":[{"javadoc":"","static":false,"name":"<init>","comment":"","params":[],"throws":[],"return":{"type_long":"void","comment":"","type_short":"void"}}],"name":"StringEditor","comment":"","fields":[]}

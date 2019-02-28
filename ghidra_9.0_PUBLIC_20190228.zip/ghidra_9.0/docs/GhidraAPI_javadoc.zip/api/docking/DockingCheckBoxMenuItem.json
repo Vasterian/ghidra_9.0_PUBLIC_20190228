@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"javax.swing.JCheckBoxMenuItem","methods":[{"javadoc":"","static":false,"name":"<init>","comment":"","params":[{"type_long":"boolean","name":"isSelected","comment":"","type_short":"boolean"}],"throws":[],"return":{"type_long":"void","comment":"","type_short":"void"}}],"name":"DockingCheckBoxMenuItem","comment":"","fields":[]}

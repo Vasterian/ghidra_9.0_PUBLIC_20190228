@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"<code>NoTransactionException<\/code> occurs when a database modification is\n attempted when no transaction exists.","static":false,"extends":"java.lang.RuntimeException","methods":[],"name":"NoTransactionException","comment":"NoTransactionException occurs when a database modification is\n attempted when no transaction exists.","fields":[]}

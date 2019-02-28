@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Specification-Title: Decompiler
+Specification-Version: 9.0
+Specification-Vendor: Ghidra
+

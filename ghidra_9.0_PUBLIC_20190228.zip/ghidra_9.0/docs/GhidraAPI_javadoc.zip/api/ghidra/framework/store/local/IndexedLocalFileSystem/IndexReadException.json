@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"<code>IndexReadException<\/code> occurs when an error occurs\n while reading\/processing the filesystem index","static":true,"extends":"java.io.IOException","methods":[],"name":"IndexReadException","comment":"IndexReadException occurs when an error occurs\n while reading\/processing the filesystem index","fields":[]}

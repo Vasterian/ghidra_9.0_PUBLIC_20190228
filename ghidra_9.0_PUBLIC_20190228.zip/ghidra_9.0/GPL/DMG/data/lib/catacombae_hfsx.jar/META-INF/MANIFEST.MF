@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 11.0-b15 (Sun Microsystems Inc.)
+Main-Class: org.catacombae.hfsexplorer.JarMain
+Class-Path: csframework.jar hfsx_dmglib.jar apache-ant-1.7.0-bzip2.jar
+  iharder-base64.jar swing-layout-1.0.3.jar
+

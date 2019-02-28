@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"An illegal access has been performed on a field.","static":false,"extends":"java.lang.RuntimeException","methods":[],"name":"IllegalFieldAccessException","comment":"An illegal access has been performed on a field.","fields":[]}

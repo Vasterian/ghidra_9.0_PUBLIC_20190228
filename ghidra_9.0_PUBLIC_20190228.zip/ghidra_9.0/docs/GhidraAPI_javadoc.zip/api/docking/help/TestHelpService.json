@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"docking.help.HelpManager","methods":[{"javadoc":"","static":true,"name":"install","comment":"","params":[{"type_long":"java.net.URL","name":"masterHelpSetUrl","comment":"","type_short":"URL"}],"throws":[],"return":{"type_long":"void","comment":"","type_short":"void"}}],"name":"TestHelpService","comment":"","fields":[]}

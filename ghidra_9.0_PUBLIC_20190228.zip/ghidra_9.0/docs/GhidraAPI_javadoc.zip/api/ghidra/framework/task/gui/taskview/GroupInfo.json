@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"ghidra.framework.task.gui.taskview.AbstractTaskInfo","methods":[{"javadoc":"","static":false,"name":"toString","comment":"","params":[],"throws":[],"return":{"type_long":"java.lang.String","comment":"","type_short":"String"}}],"name":"GroupInfo","comment":"","fields":[]}

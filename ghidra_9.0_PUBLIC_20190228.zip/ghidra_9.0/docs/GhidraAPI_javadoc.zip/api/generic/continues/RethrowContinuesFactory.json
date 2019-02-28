@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"generic.continues.ContinuesFactory","methods":[],"name":"RethrowContinuesFactory","comment":"","fields":[{"type_long":"generic.continues.RethrowContinuesFactory","javadoc":"","static":true,"name":"INSTANCE","comment":"","type_short":"RethrowContinuesFactory","constant_value":null}]}

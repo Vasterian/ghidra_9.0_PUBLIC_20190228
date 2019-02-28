@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: ganymed-ssh-2
+Implementation-Version: 262
+Implementation-Vendor-Id: ch.ethz.ganymed
+Built-By: dkocher
+Build-Jdk: 1.7.0_40
+Specification-Title: ganymed-ssh-2
+Created-By: Apache Maven 3.0.5
+Specification-Version: 262
+Archiver-Version: Plexus Archiver
+

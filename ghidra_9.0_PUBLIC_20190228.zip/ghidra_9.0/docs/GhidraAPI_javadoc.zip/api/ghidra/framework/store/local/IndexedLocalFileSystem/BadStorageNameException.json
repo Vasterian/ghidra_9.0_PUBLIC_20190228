@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"<code>BadStorageNameException<\/code> invalid storage name\n encountered.","static":true,"extends":"java.io.IOException","methods":[],"name":"BadStorageNameException","comment":"BadStorageNameException invalid storage name\n encountered.","fields":[]}

@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"java.lang.Object","methods":[{"javadoc":"","static":true,"name":"createDirectedGraph","comment":"","params":[],"throws":[],"return":{"type_long":"ghidra.graph.GDirectedGraph<V,E>","comment":"","type_short":"GDirectedGraph"}}],"name":"GraphFactory","comment":"","fields":[]}

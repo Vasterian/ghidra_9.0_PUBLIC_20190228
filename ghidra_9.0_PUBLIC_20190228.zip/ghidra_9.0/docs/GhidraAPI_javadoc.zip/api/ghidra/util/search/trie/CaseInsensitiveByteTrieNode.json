@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"Class to represent a (possibly non-terminal!) node within the CaseInsensitiveByteTrie.\n@param <T> the user item type","static":false,"extends":"ghidra.util.search.trie.ByteTrieNode","methods":[],"name":"CaseInsensitiveByteTrieNode","comment":"Class to represent a (possibly non-terminal!) node within the CaseInsensitiveByteTrie.","fields":[]}

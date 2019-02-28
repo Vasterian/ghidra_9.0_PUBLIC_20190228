@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jenkins
+Build-Jdk: 1.7.0_51
+Implementation-Title: Dex Reader
+Implementation-Version: 2.0
+Implementation-Vendor-Id: com.googlecode.d2j
+Implementation-Build: 20141027-1726
+

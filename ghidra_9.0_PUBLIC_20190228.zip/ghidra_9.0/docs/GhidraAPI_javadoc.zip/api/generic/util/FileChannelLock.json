@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"java.lang.Object","methods":[{"javadoc":"","static":false,"name":"<init>","comment":"","params":[{"type_long":"java.io.File","name":"lockFile","comment":"","type_short":"File"}],"throws":[],"return":{"type_long":"void","comment":"","type_short":"void"}}],"name":"FileChannelLock","comment":"","fields":[]}

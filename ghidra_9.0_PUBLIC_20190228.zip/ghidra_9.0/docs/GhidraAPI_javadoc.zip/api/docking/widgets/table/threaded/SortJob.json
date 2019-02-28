@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"docking.widgets.table.threaded.TableUpdateJob","methods":[{"javadoc":"","static":false,"name":"filter","comment":"","params":[],"throws":[],"return":{"type_long":"boolean","comment":"","type_short":"boolean"}}],"name":"SortJob","comment":"","fields":[]}

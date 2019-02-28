@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"utility.applicaiton.ApplicationSettings","methods":[{"javadoc":"","static":false,"name":"<init>","comment":"","params":[],"throws":[],"return":{"type_long":"void","comment":"","type_short":"void"}}],"name":"GenericApplicationSettings","comment":"","fields":[]}

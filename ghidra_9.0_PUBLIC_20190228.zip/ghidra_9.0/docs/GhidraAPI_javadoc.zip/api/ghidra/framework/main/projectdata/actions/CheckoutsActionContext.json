@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"docking.ActionContext","methods":[{"javadoc":"","static":false,"name":"getSelectedRows","comment":"","params":[],"throws":[],"return":{"type_long":"int[]","comment":"","type_short":"int[]"}}],"name":"CheckoutsActionContext","comment":"","fields":[]}

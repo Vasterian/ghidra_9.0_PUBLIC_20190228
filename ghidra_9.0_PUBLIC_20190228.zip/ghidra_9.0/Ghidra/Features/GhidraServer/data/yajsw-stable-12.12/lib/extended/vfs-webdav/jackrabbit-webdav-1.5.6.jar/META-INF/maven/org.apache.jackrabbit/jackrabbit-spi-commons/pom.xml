@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+<!-- ====================================================================== -->
+<!-- P R O J E C T  D E S C R I P T I O N                                   -->
+<!-- ====================================================================== -->
+  <parent>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>jackrabbit-parent</artifactId>
+    <version>1.5.0</version>
+    <relativePath>../jackrabbit-parent/pom.xml</relativePath>
+  </parent>
+  <artifactId>jackrabbit-spi-commons</artifactId>
+  <version>1.5.5</version>
+  <name>Jackrabbit SPI Commons</name>
+
+  <scm>
+    <connection>
+      scm:svn:http://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbit-spi-commons
+    </connection>
+    <developerConnection>
+      scm:svn:https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbit-spi-commons
+    </developerConnection>
+    <url>http://svn.apache.org/viewvc/jackrabbit/trunk/jackrabbit-spi-commons</url>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>delete-sources</id>
+            <phase>process-sources</phase>
+            <configuration>
+              <tasks>
+                <echo>Remove files that have been customized in Jackrabbit</echo>
+                <delete>
+                  <fileset dir="${project.build.directory}/generated-sources/javacc/org/apache/jackrabbit/spi/commons/query">
+                    <include name="sql/ASTLiteral.java"/>
+                    <include name="sql/ASTContainsExpression.java"/>
+                    <include name="sql/ASTPredicate.java"/>
+                    <include name="sql/ASTIdentifier.java"/>
+                    <include name="xpath/SimpleNode.java"/>
+                  </fileset>
+                </delete>
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant-optional</artifactId>
+            <version>1.5.3-1</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>javacc-maven-plugin</artifactId>
+        <version>2.4.1</version>
+        <executions>
+          <execution>
+            <id>sql</id>
+            <configuration>
+              <sourceDirectory>${basedir}/src/main/javacc/sql</sourceDirectory>
+              <packageName>org.apache.jackrabbit.spi.commons.query.sql</packageName>
+            </configuration>
+            <goals>
+              <goal>jjtree-javacc</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>xpath</id>
+            <configuration>
+              <sourceDirectory>${basedir}/src/main/javacc/xpath</sourceDirectory>
+              <packageName>org.apache.jackrabbit.spi.commons.query.xpath</packageName>
+            </configuration>
+            <goals>
+              <goal>jjtree-javacc</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <includes>
+            <include>**/*TestAll.java</include>
+          </includes>
+          <argLine>-Xmx128m</argLine>
+          <systemProperties>
+            <property>
+              <name>derby.system.durability</name>
+              <value>test</value>
+            </property>
+            <property>
+              <name>derby.storage.fileSyncTransactionLog</name>
+              <value>true</value>
+            </property>
+            <property>
+              <name>derby.stream.error.file</name>
+              <value>target/derby.log</value>
+            </property>
+            <property>
+              <name>known.issues</name>
+              <value>
+                org.apache.jackrabbit.core.xml.DocumentViewTest#testMultiValue
+                org.apache.jackrabbit.value.BinaryValueTest#testBinaryValueEquals
+              </value>
+            </property>
+          </systemProperties>
+        </configuration>
+        <executions>
+          <execution>
+            <id>do_init</id>
+            <phase>pre-integration-test</phase>
+            <configuration>
+              <includes>
+                <include>**/integration/PrepareTestRepository.java</include>
+              </includes>
+            </configuration>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>do_test</id>
+            <phase>integration-test</phase>
+            <configuration>
+              <includes>
+                <include>**/integration/*Test.java</include>
+              </includes>
+            </configuration>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <configuration>
+          <configLocation>checkstyle.xml</configLocation>
+        </configuration>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>src/main/resources-filtered</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>javax.jcr</groupId>
+      <artifactId>jcr</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>jackrabbit-spi</artifactId>
+      <version>1.5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>jackrabbit-jcr-commons</artifactId>
+      <version>1.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>

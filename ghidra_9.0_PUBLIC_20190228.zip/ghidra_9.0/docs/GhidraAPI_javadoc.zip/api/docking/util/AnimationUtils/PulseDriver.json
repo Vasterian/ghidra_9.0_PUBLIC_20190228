@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":true,"extends":"java.lang.Object","methods":[{"javadoc":"","static":false,"name":"setEmphasis","comment":"","params":[{"type_long":"double","name":"emphasis","comment":"","type_short":"double"}],"throws":[],"return":{"type_long":"void","comment":"","type_short":"void"}}],"name":"PulseDriver","comment":"","fields":[]}

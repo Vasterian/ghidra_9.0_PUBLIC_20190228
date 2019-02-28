@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.commons.cli
+Archiver-Version: Plexus Archiver
+Built-By: britter
+Bnd-LastModified: 1434276368909
+Implementation-Vendor-Id: org.apache
+Specification-Title: Apache Commons CLI
+Bundle-DocURL: http://commons.apache.org/proper/commons-cli/
+Include-Resource: META-INF/LICENSE.txt=LICENSE.txt,META-INF/NOTICE.txt
+ =NOTICE.txt
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Export-Package: org.apache.commons.cli;version="1.3.1"
+Bundle-Name: Apache Commons CLI
+Implementation-Title: Apache Commons CLI
+Bundle-Description: Apache Commons CLI provides a simple API for prese
+ nting, processing and validating a command line interface.
+Implementation-Version: 1.3.1
+Specification-Vendor: The Apache Software Foundation
+Bundle-ManifestVersion: 2
+Bundle-Vendor: The Apache Software Foundation
+Tool: Bnd-2.3.0.201405100607
+Implementation-Vendor: The Apache Software Foundation
+Bundle-Version: 1.3.1
+X-Compile-Target-JDK: 1.5
+Implementation-Build: tags/cli-1.3.1-RC1@r1685378; 2015-06-14 10:06:05
+ +0000
+X-Compile-Source-JDK: 1.5
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_31
+Specification-Version: 1.3.1
+

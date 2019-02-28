@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Specification-Title: Utility
+Specification-Version: 9.0-BETA2
+Specification-Vendor: Ghidra
+

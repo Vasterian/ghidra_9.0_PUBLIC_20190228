@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"Task to show a dialog to enter comments for checking in a file","static":false,"extends":"ghidra.util.task.Task","methods":[],"name":"VersionControlTask","comment":"Task to show a dialog to enter comments for checking in a file","fields":[]}

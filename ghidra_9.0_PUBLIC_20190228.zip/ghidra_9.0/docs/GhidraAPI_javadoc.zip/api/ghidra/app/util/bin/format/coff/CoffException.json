@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"java.lang.Exception","methods":[{"javadoc":"","static":false,"name":"<init>","comment":"","params":[{"type_long":"java.lang.String","name":"message","comment":"","type_short":"String"}],"throws":[],"return":{"type_long":"void","comment":"","type_short":"void"}}],"name":"CoffException","comment":"","fields":[]}

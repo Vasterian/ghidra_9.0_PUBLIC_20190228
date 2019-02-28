@@ -1,0 +1,1 @@
+{"implements":[],"javadoc":"","static":false,"extends":"java.lang.Object","methods":[{"javadoc":"","static":false,"name":"setColor","comment":"","params":[{"type_long":"java.awt.Color","name":"updatedColor","comment":"","type_short":"Color"}],"throws":[],"return":{"type_long":"void","comment":"","type_short":"void"}}],"name":"TitleFlasher","comment":"","fields":[]}

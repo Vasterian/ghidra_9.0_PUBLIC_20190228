@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.0.5
+Built-By: jrtom
+Build-Jdk: 1.8.0-google-v7
+Class-Path: guava-19.0.jar
+

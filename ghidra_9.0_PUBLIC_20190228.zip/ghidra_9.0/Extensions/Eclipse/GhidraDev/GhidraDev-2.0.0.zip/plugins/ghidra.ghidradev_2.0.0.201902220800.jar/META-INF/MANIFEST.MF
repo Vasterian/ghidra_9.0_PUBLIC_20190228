@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: ghidra.ghidradev
+Bundle-SymbolicName: ghidra.ghidradev;singleton:=true
+Bundle-Name: GhidraDev
+Bundle-Version: 2.0.0.201902220800
+Bundle-ClassPath: .,build/data/Utility.jar,build/data/LaunchSupport.ja
+ r
+Require-Bundle: org.eclipse.ant.core;bundle-version="3.5.200",org.ecli
+ pse.buildship.core;bundle-version="3.0.0",org.eclipse.core.expression
+ s;bundle-version="3.6.200",org.eclipse.core.externaltools;bundle-vers
+ ion="1.1.200",org.eclipse.core.runtime;bundle-version="3.15.100",org.
+ eclipse.debug.ui;bundle-version="3.13.200",org.eclipse.jdt.core;bundl
+ e-version="3.16.0",org.eclipse.jdt.core.manipulation;bundle-version="
+ 1.11.0",org.eclipse.jdt.debug.ui;bundle-version="3.10.100",org.eclips
+ e.jdt.launching;bundle-version="3.12.0",org.eclipse.jdt.ui;bundle-ver
+ sion="3.16.0",org.eclipse.ltk.core.refactoring;bundle-version="3.9.20
+ 0",org.eclipse.ui;bundle-version="3.111.0",org.eclipse.ui.ide;bundle-
+ version="3.14.200",com.python.pydev.debug;bundle-version="6.3.1";reso
+ lution:=optional,org.python.pydev;bundle-version="6.3.1";resolution:=
+ optional,org.python.pydev.core;bundle-version="6.3.1";resolution:=opt
+ ional,org.python.pydev.ast;bundle-version="6.3.1";resolution:=optiona
+ l,org.eclipse.cdt.core;bundle-version="5.9.1";resolution:=optional,or
+ g.eclipse.cdt.ui;bundle-version="5.9.0";resolution:=optional
+Bundle-ManifestVersion: 2
+Bundle-Activator: ghidradev.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Ghidra
+
+
